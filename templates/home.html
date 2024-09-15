@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="icon" href="https://storage.googleapis.com/lazy-icons/not-found-placeholder.webp" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>AI Learning Hub</title>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    {% include 'partials/_header.html' %}
+    <div class="main-content">
+      <section class="hero bg-blue-600 text-white py-20">
+        <div class="container mx-auto text-center">
+          <h1 class="text-4xl font-bold mb-4">Welcome to AI Learning Hub</h1>
+          <p class="text-xl mb-8">Explore the fascinating world of Artificial Intelligence</p>
+          <a href="#topics" class="bg-white text-blue-600 py-2 px-6 rounded-full font-bold hover:bg-blue-100 transition duration-300">Begin Your AI Journey</a>
+        </div>
+      </section>
+      
+      <section id="topics" class="py-16">
+        <div class="container mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-12">AI Topics Overview</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- AI Topic Cards -->
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold mb-2">Searching Algorithms</h3>
+              <p class="text-gray-600 mb-4">Explore informed and uninformed searching algorithms, including Depth-First Search and Breadth-First Search.</p>
+              <a href="{{ url_for('topic_route', topic='searching-algorithms') }}" class="text-blue-600 hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold mb-2">Turing Test</h3>
+              <p class="text-gray-600 mb-4">Understand the classic test for machine intelligence and its implications in modern AI.</p>
+              <a href="{{ url_for('topic_route', topic='turing-test') }}" class="text-blue-600 hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold mb-2">8-Puzzle Problem</h3>
+              <p class="text-gray-600 mb-4">Dive into this classic problem and learn how AI approaches puzzle-solving.</p>
+              <a href="{{ url_for('topic_route', topic='8-puzzle-problem') }}" class="text-blue-600 hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold mb-2">A* Search</h3>
+              <p class="text-gray-600 mb-4">Learn about admissible heuristics and the benefits of A* search compared to greedy search.</p>
+              <a href="{{ url_for('topic_route', topic='a-star-search') }}" class="text-blue-600 hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold mb-2">PEAS in AI</h3>
+              <p class="text-gray-600 mb-4">Explore the PEAS framework and its application to the Vacuum Cleaner problem.</p>
+              <a href="{{ url_for('topic_route', topic='peas-in-ai') }}" class="text-blue-600 hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h3 class="text-xl font-semibold mb-2">Hill Climbing Algorithm</h3>
+              <p class="text-gray-600 mb-4">Understand the Hill Climbing Algorithm and Constraint Satisfaction problems in AI.</p>
+              <a href="{{ url_for('topic_route', topic='hill-climbing-algorithm') }}" class="text-blue-600 hover:underline">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8">Downloadable Resources</h2>
+          <p class="text-xl mb-8">Access easy-to-understand explanations and step-by-step guides</p>
+          <a href="#" class="bg-blue-600 text-white py-2 px-6 rounded-full font-bold hover:bg-blue-700 transition duration-300">
+            <i class="fas fa-download mr-2"></i>Download AI Basics Guide (PDF)
+          </a>
+        </div>
+      </section>
+    </div>
+    <script src="/static/js/home.js"></script>
+  </body>
+</html>
