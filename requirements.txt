@@ -1,0 +1,15 @@
+Flask
+Flask-SQLAlchemy
+MarkupSafe
+PyGithub
+SQLAlchemy
+flask-static-compress
+flask==3.0.1
+fpdf
+gunicorn
+jinja2
+markdown2==2.4.3
+openai
+python-dotenv
+sqlalchemy
+werkzeug==3.0.1
